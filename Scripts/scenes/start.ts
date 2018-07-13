@@ -25,11 +25,12 @@ module scenes {
     public Start(): void {
       this._welcomeLabel = new objects.Label("Welcome", "60px", "Consolas", "#000000", 320, 240, true);
       this._startButton = new objects.Button(this.assetManager, "startButton", 320, 300);
+      this.Main();
     }
 
-    public Update(): number {
+    public Update(): void {
 
-      return objects.Game.currentScene;
+     
     }
 
     // This is where the fun happens
